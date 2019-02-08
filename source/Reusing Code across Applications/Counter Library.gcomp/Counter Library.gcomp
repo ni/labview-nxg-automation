@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="DAAE3F659C828F69587B131FA98F84B259D762501F8C4023F185EDFF090293AD27696462EE00146C3012B8C8122B558BD32851F3EB8217ED87E271E28B67A5ED" Timestamp="1D4A925DF2984BE" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.0.809" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.0.809" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ParsableNamespace AssemblyFileVersion="6.4.0.809" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
+		<ApplicationVersionInfo Build="6.4.0.809" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="b09ea0aab51248fcb503787b7e005222" RootNamespaceId="bc9a56843364bc5ba92c205629f7721" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="f9db6d629786413998d7d9df8a2c7b4d" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="2fb94de5188f4a0da8779952833e9a8b" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="d5a5405bddb04724bedb15e9722c33de" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="718a6865b3c4deda24a7d7de755ad29" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration Id="943e5d8e780a4fa4ba6f051574579ae9" Name="Configuration1">
+			<CompilerSymbolTable Id="2bb8bf209d604f9d9398631595687b2d" xmlns="http://www.ni.com/PlatformFramework" />
+			<ComponentItemProperties AssociatedEnvoyId="5c07f0784b6d4869b98c0142b4cd7ed2" Exported="True" Id="53b6a92b06f441fdbcc8a6b000572722" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="adcbefffb8e14918b39ea9eabad487ec" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="3ba72b247cc64a1eb8a4d00d84dd2e00" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<EmbeddedDefinitionReference Id="70897d697134e5a9e5a96c8f6befab7" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="bc9a56843364bc5ba92c205629f7721" Name="Counter Library">
+				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="5c07f0784b6d4869b98c0142b4cd7ed2" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Counter.gvi" StoragePath="Counter.gvi" />
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="8f778e3518354075a8719980e796a3f2" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="Counter Library.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference ContentIdentifier="943e5d8e780a4fa4ba6f051574579ae9" Id="1b24c8bf52c1463c99267db09cec4822" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

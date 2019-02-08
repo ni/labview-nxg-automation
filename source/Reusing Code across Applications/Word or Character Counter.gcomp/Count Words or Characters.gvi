@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="7B42E1B9E3A2C31B2F4C964E8C4984D821FFB79F76468BB18FA58D607D0A04377B6796D863560E0E936393F15D57109E8B211478E667B85DB5CDD88CC9583606" Timestamp="1D4A9E1417C122F" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.0.809" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.0.809" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.0.809" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.0.809" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.0.809" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.0.809" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Count Words or Characters" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
+		<BlockDiagram Id="12">
+			<WhileLoop Bounds="-15 35 470 240" DiagramId="47" Id="46">
+				<LoopIteration Bounds="5 210 15 15" Id="48" />
+				<LoopCondition Bounds="435 160 15 15" Id="49" />
+				<EventStructure Bounds="14 25 411 183" Id="50" Selected="215" UserSelectorBounds="20 0 371 17">
+					<EventStructure.EventCase Bounds="21 18 369 157" Id="51">
+						<EventStructure.AttachedEvent EventId="{DF1EFEBC-BF4C-4B72-8E78-D711B1FAC11A}" EventIndex="1073741825" EventName="Timeout" EventSourceType="Application" SourceContent="50" SourceName="Timeout" />
+						<EventStructure.AttachedEvent EventId="{F3226E31-E688-4C58-AE1E-7ED6718409A1}" EventIndex="2" EventName="Value changed" EventSourceType="Content" EventType="@30655f16d4eb4bd39c9a7b3dd58028ab" SourceContent="125" SourceName="Text" />
+						<EventStructure.AttachedEvent EventId="{F3226E31-E688-4C58-AE1E-7ED6718409A1}" EventIndex="2" EventName="Value changed" EventSourceType="Content" EventType="@0d9bf104adc34ac781946a83c40ea603" SourceContent="203" SourceName="What" />
+						<EventStructure.EventData Bounds="0 65 62 35" HasErrorTerminals="False" Id="52" InstanceDataType="@9474a27bed6e421da13e616fd824b4ef" Mode="InstanceProperties" PropertyPathsInSemanticOrder="Time,Index">
+							<EventPropertyItemTerminal DataType="UInt32" Hotspot="62 15" Id="c0t0v" Path="Time" PathElementMemberKinds="Field" Usage="Optional" />
+						</EventStructure.EventData>
+						<DataAccessor Bounds="256 72 40 15" DataItem="118" Id="121" Label="122" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="121" Bounds="301 72 33 14" Id="122" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Count</p.Text>
+						</NodeLabel>
+						<DataAccessor Bounds="105 52 40 15" DataItem="127" Id="128" Label="129" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="128" Bounds="75 52 25 14" Id="129" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Text</p.Text>
+						</NodeLabel>
+						<DataAccessor Bounds="105 77 40 15" DataItem="201" Id="202" Label="205" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="@c7f083095c354ed7bdf1376215cd213c" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="202" Bounds="71 77 29 14" Id="205" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>What</p.Text>
+						</NodeLabel>
+						<Literal Bounds="313 115 25 15" DataType="Boolean" Id="212" xmlns="http://www.ni.com/MocCommon">
+							<p.Data>False</p.Data>
+							<BooleanBehavior />
+						</Literal>
+						<Wire Id="213" Joints="N(212:Out)|(338,120) h(29) N(104:51)|(367,122)" xmlns="http://www.ni.com/PlatformFramework" />
+						<MethodCall Bounds="190 52 40 40" Id="428b068360654381b46639b9736b6df6" ResolveFailedHint="&quot;C:\\Users\\esearl\\Documents\\GitHub\\pipeline-test\\source\\Reusing Code across Applications\\Counter Library.gcomp\\Counter.gvi&quot;" Signature="@af67ee48feae4a08afb25f980b261d1b" Target="Counter Library::Counter.gvi" xmlns="http://www.ni.com/MocCommon">
+							<p.MethodDeclaration>
+								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+									<Parameter Id="L0" Desc="string" />
+									<Parameter Id="L1" Desc="what" />
+									<Parameter Id="R0" Desc="string out" />
+									<Parameter Id="R1" Desc="words" />
+									<Parameter Id="R2" Desc="count" />
+								</MethodDeclaration>
+							</p.MethodDeclaration>
+							<Terminal DataType="String" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@c7f083095c354ed7bdf1376215cd213c" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="String[]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Int32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+						</MethodCall>
+						<Wire Id="9b79ebd333294c2f8516d6e6ee65ffe7" Joints="N(128:Value)|(145,57) N(428b068360654381b46639b9736b6df6:L0)|(190,57)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="b9fe0951d93b4823b1e8887336673e7b" Joints="N(202:Value)|(145,82) h(30) v(-15) N(428b068360654381b46639b9736b6df6:L1)|(190,67)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="7ef499e190bd45419c502a78b3399500" Joints="N(428b068360654381b46639b9736b6df6:R2)|(230,77) N(121:Value)|(259,77)" xmlns="http://www.ni.com/PlatformFramework" />
+					</EventStructure.EventCase>
+					<EventStructure.EventCase Bounds="21 18 369 157" Id="88">
+						<EventStructure.AttachedEvent EventId="{F3226E31-E688-4C58-AE1E-7ED6718409A1}" EventIndex="2" EventName="Value changed" EventSourceType="Content" EventType="@1ef69030fee54daa8fc4bbc345305250" SourceContent="83" SourceName="Stop" />
+						<EventStructure.EventData Bounds="0 50 93 50" HasErrorTerminals="False" Id="89" InstanceDataType="@08cf642225804f879a7d45a7788334d3" Mode="InstanceProperties" PropertyPathsInSemanticOrder="Time,Index,Control Reference,Old Value,New Value">
+							<EventPropertyItemTerminal DataType="Boolean" Hotspot="93 15" Id="c0t0v" Path="Old Value" PathElementMemberKinds="Field" Usage="Optional" />
+							<EventPropertyItemTerminal DataType="Boolean" Hotspot="93 30" Id="c1t0v" Path="New Value" PathElementMemberKinds="Field" Usage="Optional" />
+						</EventStructure.EventData>
+						<DataAccessor Bounds="186 115 40 15" DataItem="84" Id="85" Label="87" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="85" Bounds="155 115 26 14" Id="87" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Stop</p.Text>
+						</NodeLabel>
+						<Wire Id="103" Joints="N(85:Value)|(226,120) h(141) N(104:88)|(367,122)" xmlns="http://www.ni.com/PlatformFramework" />
+					</EventStructure.EventCase>
+					<EventStructure.Tunnel Bounds="388 135 25 10" Docking="Right" Id="104" Terminals="50=90, 51=213, 88=103, 215=222" />
+					<EventStructure.EventTimeout Bounds="-2 50 25 25" Docking="Left" Id="208" Terminals="50=211, 51, 88, 215" />
+					<EventStructure.EventCase Bounds="21 18 369 157" Id="215">
+						<EventStructure.EventData Bounds="0 112 62 35" HasErrorTerminals="False" Id="216" InstanceDataType="@72d0e9bf1f684b308f2ad1dea5880703" Mode="InstanceProperties" PropertyPathsInSemanticOrder="Time,Index,Window Reference">
+							<EventPropertyItemTerminal DataType="UInt32" Hotspot="62 15" Id="c0t0v" Path="Time" PathElementMemberKinds="Field" Usage="Optional" />
+						</EventStructure.EventData>
+						<EventStructure.AttachedEvent EventId="ED52A427-F9CC-434C-8C7A-BC7A739009C2" EventIndex="16" EventName="Close?" EventSourceType="Content" EventType="@f8cfe721c7da4a89a4789574f1735d35" SourceContent="214" SourceName="Window" />
+						<EventStructure.EventFilter Bounds="287 65 82 35" FilterData="PropertyFilteringDataForEventNode" HasErrorTerminals="False" Id="217" InstanceDataType="@72d0e9bf1f684b308f2ad1dea5880703" Mode="InstanceProperties" PropertyPathsInSemanticOrder="Discard?">
+							<PropertyItemTerminal Action="Write" DataType="Boolean" Hotspot="0 15" Id="c0t0v" Path="Discard?" PathElementMemberKinds="Field" Usage="Optional" xmlns="http://www.ni.com/MocCommon" />
+						</EventStructure.EventFilter>
+						<Literal Bounds="232 75 25 15" DataType="Boolean" Id="218" Label="219" xmlns="http://www.ni.com/MocCommon">
+							<p.Data>True</p.Data>
+							<BooleanBehavior />
+						</Literal>
+						<NodeLabel AttachedTo="218" Bounds="232 57 30 15" Id="219" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Discard?</p.Text>
+						</NodeLabel>
+						<Wire Id="220" Joints="N(218:Out)|(257,80) N(217:c0t0v)|(287,80)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Literal Bounds="313 115 25 15" DataType="Boolean" Id="221" xmlns="http://www.ni.com/MocCommon">
+							<p.Data>True</p.Data>
+							<BooleanBehavior />
+						</Literal>
+						<Wire Id="222" Joints="N(221:Out)|(338,120) h(29) N(104:215)|(367,122)" xmlns="http://www.ni.com/PlatformFramework" />
+					</EventStructure.EventCase>
+				</EventStructure>
+				<Wire Id="90" Joints="N(104:50)|(427,165) N(49:Input)|(435,165)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="211" Joints="N(210:i0)|(4,80) N(208:50)|(12,80)" xmlns="http://www.ni.com/PlatformFramework" />
+				<LoopTunnel Bounds="-4 80 13 10" Docking="Left" Id="210" Terminals="o0=209, i0=211" />
+			</WhileLoop>
+			<Literal Bounds="-90 115 50 15" DataType="Int32" Id="206" Label="207" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>3000</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<NodeLabel AttachedTo="206" Bounds="-90 98 43 14" Id="207" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>timeout</p.Text>
+			</NodeLabel>
+			<Wire Id="209" Joints="N(206:Out)|(-40,120) N(210:o0)|(-19,120)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<NativeFrontPanel Height="[float]768" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeDirections="[SizingDirections]None" PanelSizeMode="Fixed" RunInWindow="[bool]False" Title="[string]Count Words or Characters" Top="[float]0" Width="[float]1400" WindowTitleOption="[WindowTitleOption]Title">
+			<Button BaseName="[string]Stop" Content="[string]Stop" Enabled="[bool]True" FalseForeground="[SMColor]#ffff0000" Foreground="[SMColor]#ffff0000" Height="[float]24" Id="83" IncludeInCapture="[bool]False" IsMomentary="[bool]False" Label="[UIModel]86" Left="[float]532" MinHeight="[float]23.96" MinWidth="[float]32.5233345" Shape="[ButtonShape]Square" TabIndex="[int]0" Top="[float]564" Value="{DataItemBinding Id=84}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="86" LabelOwner="[UIModel]83" Left="[float]532" Text="[string]Stop" Top="[float]544" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="119" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsReadOnly="[bool]True" Label="[UIModel]124" Left="[float]436" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" TabIndex="[int]1" Top="[float]564" Value="{DataItemBinding Id=118}" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="124" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]119" Left="[float]395" Text="[string]Count" Top="[float]568" Width="[float]33" xmlns="http://www.ni.com/PanelCommon" />
+			<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Enabled="[bool]True" Height="[float]344" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="125" IsReadOnly="[bool]False" Label="[UIModel]126" Left="[float]84" MinHeight="[float]24" TabIndex="[int]2" Text="{DataItemBinding Id=127}" Top="[float]196" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]520" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="126" LabelOwner="[UIModel]125" Left="[float]84" Text="[string]Text" Top="[float]176" Width="[float]23" xmlns="http://www.ni.com/PanelCommon" />
+			<RadioButtonGroup BaseName="[string]Radio Button Group" Enabled="[bool]True" Id="203" Label="[UIModel]204" Left="[float]276" TabIndex="[int]3" Top="[float]564" Value="{DataItemBinding Id=201}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RadioButtonStyle" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<RadioButtonGroupInfo DisplayValue="[string]Words" DisplayValueOverride="[string]Words" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+				<RadioButtonGroupInfo DisplayValue="[string]Characters" DisplayValueOverride="[string]Characters" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+			</RadioButtonGroup>
+			<Label Id="204" LabelOwner="[UIModel]203" Left="[float]276" Text="[string]What" Top="[float]544" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+			<PanelExecutionWindow Id="214" />
+		</NativeFrontPanel>
+		<DataItem DataType="Boolean" Id="84" IsLatched="True" Name="Stop" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="118" Name="Count" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="String" Id="127" Name="Text" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>"LabVIEW is systems engineering software for applications that require test, measurement, and control with rapid access to hardware and data insights.\n\nThe LabVIEW programming environment simplifies hardware integration for engineering applications so that you have a consistent way to acquire data from NI and third-party hardware. LabVIEW reduces the complexity of programming, so you can focus on your unique engineering problem. LabVIEW enables you to immediately visualize results with built-in, drag-and-drop engineering user interface creation and integrated data viewers. To turn your acquired data into real business results, you can develop algorithms for data analysis and advanced control with included math and signal processing IP or reuse your own libraries from a variety of tools. To ensure compatibility with other engineering tools, LabVIEW can interoperate with, and reuse libraries from, other software and open-source languages."</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="@c7f083095c354ed7bdf1376215cd213c" Id="201" Name="What" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="30655f16d4eb4bd39c9a7b3dd58028ab">
+			<Attributed AttributedType="@bd82e3c92d754873a1200c80e2397804">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="0d9bf104adc34ac781946a83c40ea603">
+			<Attributed AttributedType="@90bfd26227bf42a5844ad2c26b733ec0">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="9474a27bed6e421da13e616fd824b4ef">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Source" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Type" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Time" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Index" DataType="UInt32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c7f083095c354ed7bdf1376215cd213c">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Words" />
+					<EnumerationMember Value="1" Name="Characters" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="af67ee48feae4a08afb25f980b261d1b">
+			<Attributed AttributedType="@57dfd2056de946ba96990a22305f63fc">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1ef69030fee54daa8fc4bbc345305250">
+			<Attributed AttributedType="@9496b57e25bf491eafd2336fed177917">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="08cf642225804f879a7d45a7788334d3">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Source" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Type" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Time" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Index" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Ref Id" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Control Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlBaseProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Old Value" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="New Value" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="72d0e9bf1f684b308f2ad1dea5880703">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Source" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Type" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Time" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Index" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Ref Id" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Window Reference" DataType=":DotNet:NationalInstruments.PanelRuntime.PanelExecutionWindowProxy, NationalInstruments.PanelRuntime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Discard?" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="f8cfe721c7da4a89a4789574f1735d35">
+			<Attributed AttributedType="@c941c1a4b956428ab7618b07565aabfb">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="bd82e3c92d754873a1200c80e2397804">
+			<Event Id="1" Name="Value changed" GenericTypeDefinition="Void">
+				<Parameters>
+					<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="Optional" Name="event data" DataType="@f4111982fddf462d8ac94734c141806d" />
+				</Parameters>
+			</Event>
+		</p.TypeReference>
+		<p.TypeReference TypeId="90bfd26227bf42a5844ad2c26b733ec0">
+			<Event Id="1" Name="Value changed" GenericTypeDefinition="Void">
+				<Parameters>
+					<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="Optional" Name="event data" DataType="@bb290bf5da094baf87f592a3e110039f" />
+				</Parameters>
+			</Event>
+		</p.TypeReference>
+		<p.TypeReference TypeId="57dfd2056de946ba96990a22305f63fc">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Counter.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@38508bb8227046b9baa4185903280dbd">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]string" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@d7e3c6975da64e3d9b8a7048825e4ada">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]what" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@3602159785354560872d2ee40d3ca1c9">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]string out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@4e057d54364e4cd39d22bac8eb84d464">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]words" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@2df4b74aef7048be8d68a006cf54d9b1">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]count" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="9496b57e25bf491eafd2336fed177917">
+			<Event Id="1" Name="Value changed" GenericTypeDefinition="Void">
+				<Parameters>
+					<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="Optional" Name="event data" DataType="@cfadfb1434714c3b8b97da38ff755c29" />
+				</Parameters>
+			</Event>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c941c1a4b956428ab7618b07565aabfb">
+			<Event Id="1" Name="Close" GenericTypeDefinition="Void">
+				<Parameters>
+					<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="Optional" Name="event data" DataType="@3ed1b779b0bd4eadbadb8030728e0726" />
+				</Parameters>
+			</Event>
+		</p.TypeReference>
+		<p.TypeReference TypeId="f4111982fddf462d8ac94734c141806d">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Ref Id" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Control Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Old Value" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="New Value" DataType="String" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="bb290bf5da094baf87f592a3e110039f">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Ref Id" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Control Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.RadioButtonGroupProxy, NationalInstruments.Controls.Runtime`UInt16`UInt16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Old Value" DataType="@c7f083095c354ed7bdf1376215cd213c" />
+					<Field FieldAccessPolicy="ReadWrite" Name="New Value" DataType="@c7f083095c354ed7bdf1376215cd213c" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="38508bb8227046b9baa4185903280dbd">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="String" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="d7e3c6975da64e3d9b8a7048825e4ada">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="@c7f083095c354ed7bdf1376215cd213c" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="3602159785354560872d2ee40d3ca1c9">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="String" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="4e057d54364e4cd39d22bac8eb84d464">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="String[]" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="2df4b74aef7048be8d68a006cf54d9b1">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="Int32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="cfadfb1434714c3b8b97da38ff755c29">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Ref Id" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Control Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlBaseProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Old Value" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="New Value" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3ed1b779b0bd4eadbadb8030728e0726">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Ref Id" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Window Reference" DataType=":DotNet:NationalInstruments.PanelRuntime.PanelExecutionWindowProxy, NationalInstruments.PanelRuntime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Discard?" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="Counter Library::Counter.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]36" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Counter" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6.75" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]Counter Library.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>
