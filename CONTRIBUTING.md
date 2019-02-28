@@ -3,7 +3,7 @@
 Contributions to labview-nxg-jenkins-build are welcome from all!
 
 labview-nxg-jenkins-build is managed via [git](https://git-scm.com), with the canonical upstream
-repository hosted on [GitHub](https://github.com/ni/<reponame>/).
+repository hosted on [GitHub](https://github.com/ni/labview-nxg-jenkins-build/).
 
 labview-nxg-jenkins-build follows a pull-request model for development.  If you wish to
 contribute, you will need to create a GitHub account, fork this project, push a
