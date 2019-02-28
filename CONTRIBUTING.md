@@ -1,4 +1,4 @@
-# Contributing to \<reponame\> 
+# Contributing to labview-nxg-jenkins-build
 
 Contributions to labview-nxg-jenkins-build are welcome from all!
 
